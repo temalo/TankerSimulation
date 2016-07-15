@@ -85,6 +85,7 @@ namespace FuelTankerSensorSimulator
             {
                 Random rnd = new Random();
                 //KC-135 max transfer is 6500lbs / minute -- Randomize that value for this instance
+                //ToDo: A possible extension would be to add a dial on the Raspberry Pi to allow external influence of this value
                 int transferRate = rnd.Next(0, 6500);
                 //How much fuel did we transfer
                 fuelRemaining = aircraft.FuelLoad - (transferRate * flightMinutes); 

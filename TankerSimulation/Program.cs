@@ -46,7 +46,7 @@ namespace FuelTankerSensorSimulator
             TankerData ac01 = new TankerData(acTailNo, 200000);
             ac01.Speedkts = RandomGenerator(250, 400);
             ac01.Heading = RandomGenerator(0, 360);
-            //This position is the Goldwater MOA refuelling track
+            //This position is the Goldwater MOA refuelling track ARIP
             ac01.Latitude = 32.582167;
             ac01.Longitude = -114.459419;
             ac01.Altitude = RandomGenerator(25000, 40000);
